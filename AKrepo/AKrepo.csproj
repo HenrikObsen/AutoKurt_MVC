@@ -47,13 +47,16 @@
     <Compile Include="DDMF_Light\Mapper.cs" />
     <Compile Include="Factories\BilFac.cs" />
     <Compile Include="Factories\BilledeFac.cs" />
+    <Compile Include="Factories\BrugerFac.cs" />
     <Compile Include="Factories\ProducentFac.cs" />
     <Compile Include="Models\Bil.cs" />
     <Compile Include="Models\Billede.cs" />
     <Compile Include="Models\BilMedBilleder.cs" />
     <Compile Include="Models\BilMedProducent.cs" />
+    <Compile Include="Models\Bruger.cs" />
     <Compile Include="Models\Producent.cs" />
     <Compile Include="Models\ProducentMedBil.cs" />
+    <Compile Include="Models\SoegViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

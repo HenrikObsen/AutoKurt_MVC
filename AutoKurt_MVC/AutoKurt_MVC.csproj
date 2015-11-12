@@ -111,12 +111,31 @@
     <Content Include="Content\Billeder\Biler\800\Opel_Insignia_02.jpg" />
     <Content Include="Content\Billeder\Producenter\chevrolet_logo.jpg" />
     <Content Include="Content\Billeder\Producenter\opel_logo.jpg" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BrugerController.cs" />
     <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\ProducentController.cs" />
     <Compile Include="Global.asax.cs">
@@ -142,6 +161,12 @@
     <Content Include="Views\Car\EnBilMedBilleder.cshtml" />
     <Content Include="Views\Car\FlereBilerMedBilleder.cshtml" />
     <Content Include="Views\Car\HentBilerMedProducent.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Car\AdvSoeg.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Bruger\Login.cshtml" />
+    <Content Include="Views\Bruger\Secret.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -38,6 +38,23 @@ namespace AutoKurt_MVC.Controllers
         {
             return View(bf.GetAllBilMedProducent());
         }
+
+        ProducentFac pf = new ProducentFac();
+        SoegViewModel svm = new SoegViewModel();
+        public ActionResult AdvSoeg()
+        {
+            svm.Biler = null;
+            svm.Producenter = pf.GetAll();
+            return View(svm);
+        }
+
+        [HttpPost]
+        public ActionResult AdvSoeg(string maxpris, string producent, string keyword)
+        {
+            svm.Biler = bf.AdvSearch(producent, maxpris, keyword);
+            svm.Producenter = pf.GetAll();
+            return View(svm);
+        }
     }
 }
 
