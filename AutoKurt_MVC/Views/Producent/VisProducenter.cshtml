@@ -1,0 +1,17 @@
+﻿@using AKrepo
+@model IEnumerable<AKrepo.Producent>
+@{
+    ViewBag.Title = "VisProducenter";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>Vis Producenter</h2>
+<ul>
+    @{
+        foreach (Producent p in Model)
+        {
+            <li>@p.Navn</li>
+        }
+    }
+</ul>
+

@@ -1,0 +1,19 @@
+﻿@model AKrepo.Producent
+@{
+    ViewBag.Title = "UpdateProducent";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>UpdateProducent</h2>
+
+<form name="myForm" action="/Producent/UpdateProducent/" enctype="multipart/form-data" method="post">
+    Navn: <input type="text" id="navn" name="navn" value="@Model.Navn"/>
+    <br/>
+    Logo: <input type="text" id="logo" name="logo" value="@Model.Logo"/>
+    <br/>
+    <input type="submit" value="Gem"/>
+    @ViewBag.MSG
+
+    <input type="hidden" id="ID" name="ID" value="@Model.ID"/>
+</form>
+

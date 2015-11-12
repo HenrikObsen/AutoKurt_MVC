@@ -1,0 +1,17 @@
+﻿@using AKrepo
+@model BilMedBilleder
+@{
+    ViewBag.Title = "EnBilMedBilleder";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<h2>@Model.Bil.Model</h2>
+
+@{
+    foreach (Billede b in Model.Billeder)
+    {
+        <img src="/Content/Billeder/Biler/300/@b.Filnavn" alt="@b.Alt"/>
+    }
+}
+

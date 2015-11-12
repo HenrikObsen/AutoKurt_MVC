@@ -1,0 +1,23 @@
+﻿@using AKrepo
+@model List<BilMedBilleder>
+@{
+    ViewBag.Title = "FlereBilerMedBilleder";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h1>Alle biler med billeder</h1>
+
+@{
+    foreach (var bmb in Model)
+    {
+        <h2>@bmb.Bil.Model</h2>
+
+        foreach (var b in bmb.Billeder)
+        {
+            <img src="/Content/Billeder/Biler/300/@b.Filnavn" alt="@b.Alt" />
+        }
+
+        <hr/>
+    }
+}
+

@@ -1,0 +1,32 @@
+﻿@using AKrepo
+@model List<Bil>
+@{
+    ViewBag.Title = "Soeg";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<h2>Søg</h2>
+
+<form name="myForm" action="/Car/SoegResult/" enctype="multipart/form-data" method="post">
+    Navn: <input type="text" id="keyWord" name="keyWord" />
+    <input type="submit" value="Søg" />
+</form>
+
+@{  if (Model != null)
+    {
+        if (Model.Count > 0)
+        {   
+            <ul>
+                @{
+                    foreach (Bil b in Model)
+                    {
+                        <li>@b.Model</li>
+                    }
+                }
+            </ul>        }
+        else
+        {
+            <p>Der blev ikke fundet noget på din søgning!</p>
+        }
+    }
+}
+

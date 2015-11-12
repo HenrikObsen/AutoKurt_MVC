@@ -1,0 +1,18 @@
+﻿@model IEnumerable<AKrepo.BilMedProducent>
+
+@{
+    ViewBag.Title = "HentBilerMedProducent";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>HentBilerMedProducent</h2>
+
+<ul>
+    @{
+        foreach (var bil in Model)
+        {
+            <li>@bil.ProducentNavn @bil.Model</li>
+        }
+    }
+</ul>
+

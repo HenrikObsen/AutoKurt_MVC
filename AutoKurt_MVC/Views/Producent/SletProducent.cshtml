@@ -1,0 +1,16 @@
+﻿@using AKrepo
+@model IEnumerable<Producent>
+@{
+    ViewBag.Title = "SletProducent";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>Slet Producent</h2>
+
+<ul>
+    @foreach (Producent p in Model)
+    {
+        <li>@p.Navn <a href="/Producent/SletProducentSys/@p.ID/">slet</a></li>
+    }
+</ul>
+

@@ -1,0 +1,17 @@
+﻿@model AKrepo.Producent
+@{
+    ViewBag.Title = "NyProducent";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>Ny Producent</h2>
+
+<form name="myForm" action="/Producent/NyProducent/" enctype="multipart/form-data" method="post">
+    Navn: <input type="text" id="navn" name="navn" rel="tekst"/>
+    <br/>
+    Logo: <input type="text" id="logo" name="logo"/>
+    <br/>
+    <input type="submit" value="Gem"/>
+    @ViewBag.MSG
+</form>
+

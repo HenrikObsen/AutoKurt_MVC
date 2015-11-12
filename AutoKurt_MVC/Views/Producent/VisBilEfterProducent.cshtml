@@ -1,0 +1,17 @@
+﻿@using AKrepo
+@model ProducentMedBil
+@{
+    ViewBag.Title = "VisBilEfterProducent";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>Vis Bil Efter Producent</h2>
+<ul>
+    @{
+        foreach (Bil bil in Model.Biler)
+        {
+            <li>@Model.Producent.Navn @bil.Model</li>
+        }
+    }
+</ul>
+
